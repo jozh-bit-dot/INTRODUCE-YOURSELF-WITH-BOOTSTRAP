@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Space | Dream Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <style>
+    body { background:#f5f7fb; }
+    .navbar { box-shadow: 0 8px 20px rgba(0,0,0,.15); }
+
+    .page-hero{
+      margin-top: 95px;
+      background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+      color:#fff;
+      border-radius: 18px;
+      padding: 2.4rem 2rem;
+      position: relative;
+      overflow:hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,.18);
+    }
+    .page-hero::after{
+      content:"";
+      position:absolute; right:-110px; top:-110px;
+      width: 300px; height: 300px;
+      background: rgba(255,255,255,.12);
+      border-radius: 50%;
+    }
+    .page-hero::before{
+      content:"";
+      position:absolute; left:-130px; bottom:-130px;
+      width: 340px; height: 340px;
+      background: rgba(255,255,255,.08);
+      border-radius: 50%;
+    }
+
+    .place-card{
+      border:0;
+      border-radius: 16px;
+      box-shadow: 0 12px 26px rgba(0,0,0,.08);
+      transition: transform .15s ease, box-shadow .15s ease;
+      overflow:hidden;
+    }
+    .place-card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 18px 34px rgba(0,0,0,.12);
+    }
+    .place-top{
+      padding: 1.2rem 1.25rem;
+      background: rgba(78,67,118,.10);
+    }
+    footer{ color:#6c757d; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand font-weight-bold" href="index.html">My Space</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+            aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+        <li class="nav-item active">
+          <a class="nav-link" href="places.html">Dream Places <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="goals.html">Goals</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="page-hero">
+    <h1 class="display-4 mb-2">Dream Places ✈️</h1>
+    <p class="lead mb-0" style="opacity:.95;">Places I want to visit someday.</p>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-4 mb-3">
+      <div class="card place-card h-100">
+        <div class="place-top">
+          <h5 class="mb-0 font-weight-bold">Japan 🇯🇵</h5>
+          <small class="text-muted">Culture • Food • City adventures</small>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-0">
+            I want to experience the mix of tradition and modern life — temples, street food, and exploring cities.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card place-card h-100">
+        <div class="place-top">
+          <h5 class="mb-0 font-weight-bold">Europe 🇪🇺</h5>
+          <small class="text-muted">History • Museums • Architecture</small>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-0">
+            I’m excited to see famous landmarks, visit museums, and learn more about history and art.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card place-card h-100">
+        <div class="place-top">
+          <h5 class="mb-0 font-weight-bold">New Zealand 🇳🇿</h5>
+          <small class="text-muted">Nature • Views • Peaceful scenery</small>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-0">
+            I want to enjoy nature trips, mountain views, and quiet places that feel relaxing and refreshing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4">
+    <small>© <span id="year"></span> My Space • Dream Places</small>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
